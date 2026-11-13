@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "minecraft:leather_helmet.player",
+      "item": {
+        "minecraft:leather_helmet": "query.is_owner_identifier_any('minecraft:player')"
+      },
+      "materials": {
+        "default": "armor_leather",
+        "enchanted": "armor_leather_enchanted"
+      },
+      "textures": {
+        "default": "textures/models/armor/leather_1",
+        "enchanted": "textures/misc/enchanted_actor_glint"
+      },
+      "geometry": {
+        "default": "geometry.player.armor.helmet",
+        "minimal": "geometry.sma.minimal.helmet",
+        "minimal_world": "geometry.sma.minimal.helmet_world_1_0_21"
+      },
+      "scripts": {
+        "parent_setup": "variable.helmet_layer_visible = query.property('sma:minimal_head');",
+        "animate": [
+          "offset"
+        ]
+      },
+      "animations": {
+        "offset": "animation.armor.helmet.offset"
+      },
+      "render_controllers": [
+        "controller.render.sma_armor_head"
+      ]
+    }
+  }
+}

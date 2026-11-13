@@ -1,0 +1,6 @@
+.cache/
+.inspection/
+dist/
+node_modules/
+pack_icon-*.png
+

@@ -1,0 +1,38 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Smart Minimal Armor",
+    "description": "Opt into minimal armor visuals using invisibility potion cauldrons.",
+    "uuid": "67df9c18-d585-4c69-9b8e-d756e74c54fa",
+    "version": [1, 0, 27],
+    "min_engine_version": [1, 26, 60]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "6e5e133d-47a1-4fbe-b0a9-403c8770d788",
+      "version": [1, 0, 27]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "4eae086f-ad61-4b93-9289-cffb31f4d7b1",
+      "version": [1, 0, 27]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "7216046c-6697-4d29-9e92-d3eea0bb0187",
+      "version": [1, 0, 27]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.10.0"
+    }
+  ],
+  "metadata": {
+    "product_type": "addon"
+  }
+}
+

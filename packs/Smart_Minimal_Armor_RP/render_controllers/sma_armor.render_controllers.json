@@ -1,0 +1,49 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.sma_armor_head": {
+      "arrays": {
+        "geometries": { "Array.sma_geometry": ["Geometry.default", "Geometry.minimal_world", "Geometry.minimal"] }
+      },
+      "geometry": "Array.sma_geometry[query.property('sma:minimal_head') * (1 + query.is_in_ui)]",
+      "materials": [{ "*": "variable.is_enchanted ? Material.enchanted : Material.default" }],
+      "textures": [
+        "variable.has_trim ? variable.trim_path : Texture.default",
+        "Texture.enchanted"
+      ]
+    },
+    "controller.render.sma_armor_chest": {
+      "arrays": {
+        "geometries": { "Array.sma_geometry": ["Geometry.default", "Geometry.minimal"] }
+      },
+      "geometry": "Array.sma_geometry[query.property('sma:minimal_chest')]",
+      "materials": [{ "*": "variable.is_enchanted ? Material.enchanted : Material.default" }],
+      "textures": [
+        "variable.has_trim ? variable.trim_path : Texture.default",
+        "Texture.enchanted"
+      ]
+    },
+    "controller.render.sma_armor_legs": {
+      "arrays": {
+        "geometries": { "Array.sma_geometry": ["Geometry.default", "Geometry.minimal"] }
+      },
+      "geometry": "Array.sma_geometry[query.property('sma:minimal_legs')]",
+      "materials": [{ "*": "variable.is_enchanted ? Material.enchanted : Material.default" }],
+      "textures": [
+        "variable.has_trim ? variable.trim_path : Texture.default",
+        "Texture.enchanted"
+      ]
+    },
+    "controller.render.sma_armor_feet": {
+      "arrays": {
+        "geometries": { "Array.sma_geometry": ["Geometry.default", "Geometry.minimal"] }
+      },
+      "geometry": "Array.sma_geometry[query.property('sma:minimal_feet')]",
+      "materials": [{ "*": "variable.is_enchanted ? Material.enchanted : Material.default" }],
+      "textures": [
+        "variable.has_trim ? variable.trim_path : Texture.default",
+        "Texture.enchanted"
+      ]
+    }
+  }
+}
