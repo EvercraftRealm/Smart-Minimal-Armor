@@ -15,7 +15,7 @@ Supported materials: leather, chainmail, copper, gold, iron, diamond, netherite,
 
 ## Installation
 
-Import the versioned `.mcaddon` from `dist` into Minecraft Bedrock Edition and activate the behavior pack. Its resource-pack dependency should activate the matching visuals automatically.
+Download and import the versioned `.mcaddon` from the latest GitHub release, then activate the behavior pack. Its resource-pack dependency should activate the matching visuals automatically.
 
 The add-on uses stable Script API features and does not require cheats or experimental toggles.
 
@@ -26,14 +26,3 @@ The add-on uses stable Script API features and does not require cheats or experi
 - Minimal rendering currently targets player-worn armor. Armor stands and mobs continue to use normal armor visuals.
 - The inventory icon stays vanilla because Bedrock does not expose per-stack dynamic properties to item-icon selection.
 - A cauldron is recognized as invisibility potion after the add-on observes an invisibility potion being poured into it. Potion cauldrons that already existed before activating the pack must be emptied and refilled.
-
-## Development layout
-
-- `packs/Smart_Minimal_Armor_BP` — behavior pack and script
-- `packs/Smart_Minimal_Armor_RP` — resource pack, attachables, and original minimal geometry
-- `SOURCE_ASSETS.md` — source provenance and asset-independence notes
-
-## Build
-
-Run `npm run check` to type-check the script and `npm run build` to validate and package matching behavior/resource packs in `dist`.
-
